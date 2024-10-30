@@ -132,6 +132,20 @@ void stop(){
 */
 
 //Exercise 6: escape_sequence2
+/*
+Write a statement to produce this output:
+
+/ \ // \\ /// \\\ //// \\\\
+*/
+
+void main(){
+    printf();
+  }
 
 //Exercise 7: escape_sequence3
+
+
+
+
+//Exercise 8: 
 
