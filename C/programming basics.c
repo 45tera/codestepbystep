@@ -147,5 +147,102 @@ void main(){
 
 
 
-//Exercise 8: 
+//Exercise 8: function_tracing1
+/*
+What is the output of the following code?
 
+void message1() {
+    printf("7 ");
+}
+
+void message2() {
+    printf("5 ");
+    message1();
+    printf("6 ");
+}
+
+int main() {
+    message1();
+    message2();
+    printf("4 ");
+    return 0;
+}
+*/
+
+// ANSWER : 7 5 7 6 4 
+// Tip - Be careful of the spaces.
+
+//Exercise 9: function_tracing2
+/*
+What is the output of the following code?
+
+void first() {
+    printf("1 ");
+}
+
+void second() {
+    printf("2 ");
+    first();
+}
+
+void third() {
+    printf("3 ");
+    first();
+    second();
+}
+
+int main() {
+    second();
+    first();
+    second();
+    third();
+    return 0;
+}
+*/
+
+//ANSWER: 2 1 1 2 1 3 1 2 1 
+// Tip - Be careful of the spaces and the functions.
+
+//Exercise 10: function_tracing3
+/*
+void function_a() {
+    printf("A ");
+}
+
+void function_b() {
+    function_a();
+    printf("B ");
+}
+
+void function_c() {
+    function_b();
+    printf("C ");
+    function_a();
+}
+
+int main() {
+    function_a();
+    function_b();
+    function_c();
+    function_b();
+    return 0;
+}
+*/
+
+//ANSWER: A A B A B C A A B 
+
+//Exercise 11: receipt
+/*
+The following console program is redundant. Rewrite it to use variables and expressions so that calculations are not repeated.
+
+int main() {
+    // Compute total owed, assuming 8% tax and 15% tip
+    printf("Subtotal: $%.02f\n", (38 + 40 + 30));
+    printf("Tax: %.02f\n", (38 + 40 + 30) * .08);
+    printf("Tip: %.02f\n", (38 + 40 + 30) * .15);
+    printf("Total: %.02f\n", (38 + 40 + 30 + (38 + 40 + 30) * .08 + (38 + 40 + 30) * .15));
+}
+*/
+
+
+//Exercise 12: receipt
