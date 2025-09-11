@@ -1,0 +1,32 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <stdbool.h>
+
+int main() {
+    char days[12][8] ={"second","third","fourth","fifth","sixth","seventh","eighth","nineth","tenth","eleventh","twelveth"};
+    
+    printf("On the first day of Christmas,\nMy true love sent to me\nA partridge in a pear tree\n\n");
+    
+        
+    
+    for (int i=0; i<11;i++){
+        
+        printf("On the %s day of Christmas,\nMy true love sent to me\n",days[i]);
+    
+        switch(i+2){
+            case 12: printf("Two turtle doves\n");
+            case 11:printf("Eleven pipers piping\n");
+            case 10:printf("Ten lords a-leaping\n");
+            case 9:printf("Nine ladies dancing\n");
+            case 8:printf("Eight maids a-milking\n");
+            case 7:printf("Seven swans a-swimming\n");
+            case 6:printf("Six geese a-laying\n");
+            case 5:printf("Five golden rings\n");
+            case 4:printf("Four calling birds\n");
+            case 3:printf("Three french hens\n");
+            case 2:printf("Two turtle doves\n");
+            case 1:printf("and a partridge in a pear tree\n\n");break;
+        }
+    }
+ 
+}
